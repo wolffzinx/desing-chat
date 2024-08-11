@@ -1,0 +1,198 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Abel', Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+.index {
+    background-color: #23598B;
+}
+
+/* Container Geral */
+.container, .codigo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.container {
+    color: white;
+}
+
+/* Estilo Comum para Card */
+.card, .codigo-card {
+    background-color: #245a8e;
+    border-radius: 50px;
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.1);
+    padding: 40px 60px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.card {
+    text-align: center;
+}
+
+.logo {
+    font-size: 48px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.nick-logo {
+    font-size: 48px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+.nick-input-container {
+    margin-bottom: 20px;
+}
+
+.codigo-placeholder-container {
+    margin-bottom: 20px;
+}
+
+/* Estilo dos Labels */
+.label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.nick-label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.codigo-title {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+/* Estilo das Entradas */
+.input {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 300px;
+    font-size: 16px;
+    outline: none;
+}
+
+.nick-input {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 300px;
+    font-size: 1px;
+    outline: none;
+}
+
+.codigo-placeholder {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 300px;
+    font-size: 16px;
+    outline: none;
+}
+
+.placeholder {
+    background-color: #fff;
+}
+
+/* Estilo do Botão */
+.button, .nick-button {
+    margin-top: 20px;
+}
+
+.btn, .nick-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #23598B;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn:hover, .nick-btn:hover {
+    background-color: #f0f0f0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .logo, .nick-logo {
+        font-size: 36px;
+    }
+    
+    .label, .nick-label, .codigo-title {
+        font-size: 25px;
+    }
+
+    .input, .nick-input, .codigo-placeholder {
+        width: 80%;
+    }
+
+    .btn, .nick-btn {
+        font-size: 14px;
+    }
+
+    .card, .codigo-card {
+        padding: 30px 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo, .nick-logo {
+        font-size: 24px;
+    }
+    
+    .label, .nick-label, .codigo-title {
+        font-size: 12px;
+    }
+
+    .input, .nick-input, .codigo-placeholder {
+        width: 70%;
+    }
+
+    .btn, .nick-btn {
+        font-size: 12px;
+    }
+
+    .card, .codigo-card {
+        padding: 20px 30px;
+    }
+    
+    .codigo-placeholder {
+        height: 35px;
+    }
+}
